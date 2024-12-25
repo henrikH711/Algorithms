@@ -42,19 +42,19 @@ def is_safe():
 for row in max_req:
     print(row)
 
-print("\nAllocation Matrix:")
+print("Allocation Matrix:")
 for row in allocation:
     print(row)
 
-print("\nNeed Matrix:")
+print("Need Matrix:")
 for row in need:
     print(row)
 
-print("\nAvailable Resources:")
+print("Available Resources:")
 print(available)
 
 safe, sequence = is_safe()
 if safe:
-    print("\nSafe state. Safe sequence:", sequence)
+    print("Safe state. Safe sequence:", sequence)
 else:
-    print("\nNot a safe state.")
+    print("Not a safe state.")
