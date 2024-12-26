@@ -11,6 +11,9 @@ for i in range(20):
     p = str(input(""))
     processes.append(p)
     while processes:
+          
          current_process = processes.pop(0)  
-    tq += 1 
-    print(f"Under_processing: {current_process} | Time quantum: {tq}")
+    current_process = processes.pop(0)  # (FIFO)
+
+tq += 1 
+print(f"Under_processing: {current_process} | Time quantum: {tq}")
