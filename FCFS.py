@@ -1,7 +1,7 @@
 # Processes (arrival time, burst time)
 processes = [("P1", 0, 4), ("P2", 2, 3), ("P3", 4, 2)]
 
-# FCFS algorithm
+# FCFS - First Come First Served algorithm
 def fcfs(processes):
     current_time = 0
     total_waiting_time = 0
