@@ -19,16 +19,13 @@ def fcfs(processes):
         waiting_time = current_time - arrival
         turnaround_time = waiting_time + burst
         
-        # Accumulate totals
+        #totals
         total_waiting_time += waiting_time
         total_turnaround_time += turnaround_time
-        
-        # Move to the next time slot
         current_time += burst
-        
         print(f"{id:<7} | {waiting_time:<13} | {turnaround_time}")
     
-    # Averages
+    
     avg_waiting_time = total_waiting_time / len(processes)
     avg_turnaround_time = total_turnaround_time / len(processes)
     
@@ -36,5 +33,5 @@ def fcfs(processes):
     print(f"Average Waiting Time: {avg_waiting_time:.2f}")
     print(f"Average Turnaround Time: {avg_turnaround_time:.2f}")
 
-# Execute
+# run
 fcfs(processes)
