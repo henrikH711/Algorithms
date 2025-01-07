@@ -1,7 +1,9 @@
-﻿#Scheduling algorithms
- 
-This repo contains  scheduling algorithms that were written in python. 
-Thought  would be a nice idea to showcase how these algoritms work, not just on paper. 
-These versions may require updateding due to my experimental level of programming.
-More content and repos will be added in the near future ;)
+﻿
 
+#Scheduling Algorithms
+
+This repository contains a collection of scheduling algorithms implemented in Python, designed to demonstrate their functionality both theoretically and practically.
+
+Please note that these implementations are at an experimental stage and may require further updates. However, they serve as an excellent foundation for understanding key scheduling concepts and how they can be applied in real-world scenarios.
+
+Stay tuned for more content and additional repositories to be added in the near future. ;)
