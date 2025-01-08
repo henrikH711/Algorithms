@@ -1,7 +1,8 @@
 #!/bin/env/python3
-
+ # Sort by the second element 
 def sort_by_period(process):
-    return process[1]  # Sort by the second element 
+    return process[1] 
+
 
 def rate_monotonic_scheduling(processes):
     # Sort processes 
