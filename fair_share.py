@@ -10,7 +10,6 @@ class FairShareScheduler:
     def run(self):
         print("Total CPU time available:", self.total_time)
         print("Time slice for each process:", self.time_slice)
-        # Run each process one by one
         for process in self.processes:
             print("Running process:", process)
             self.execute_process(process)
