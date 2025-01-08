@@ -1,28 +1,20 @@
-#!/bin/env/python3 
+#!/bin/env/python3
 
-class FairShareScheduler:
-
-    def __init__(self, processes, total_time):
-        self.processes = processes  
-        self.total_time = total_time  
-        self.time_slice = total_time // len(processes)  
-   
-    def run(self):
-        print("Total CPU time available:", self.total_time)
-        print("Time slice for each process:", self.time_slice)
-        for process in self.processes:
-            print("Running process:", process)
-            self.execute_process(process)
-
-    def execute_process(self, process):
-        print("Starting process:", process)
-        print("Process", process, "is running for", self.time_slice, "seconds.")
+def fair_share_scheduler(processes, total_time):
+    time_slice = total_time // len(processes)  # Each process gets equal time slice
+    
+    print("Total CPU time available:", total_time)
+    print("Time slice for each process:", time_slice)
+    
+    for process in processes:
+        print("Running process:", process)
+        print("Process", process, "is running for", time_slice, "seconds.")
         print("Process", process, "finished.")
 
 
-
+# Example processes and total time
 total_time = 9  # Total CPU time available
 processes = ["P1", "P2", "P3"]
-# Create a scheduler and run it
-scheduler = FairShareScheduler(processes, total_time)
-scheduler.run()
+
+# Run the fair share scheduler
+fair_share_scheduler(processes, total_time)
